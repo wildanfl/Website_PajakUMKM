@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PajakUMKM - Sistem Informasi Pajak</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            PajakUMKM
+        </div>
+        <nav class="nav-links">
+            <a href="#">Beranda</a>
+            <a href="#">Layanan</a>
+            <a href="#">Kalkulator</a>
+            <a href="#">Informasi</a>
+        </nav>
+        <button class="btn btn-primary" onclick="alert('Fungsionalitas Back-End sedang diimplementasikan!')">Mulai Sekarang</button>
+    </header>
+
+    <section class="hero-section text-center">
+        <div class="hero-content">
+            <span class="tag-info">Sistem Informasi Pajak UMKM 2024</span>
+            <h1>Selamat Datang di Sistem <span class="highlight">Informasi</span> Pajak UMKM</h1>
+            <p>Aplikasi web yang dirancang untuk menjadi pusat informasi perpajakan bagi pelaku UMKM. Menyederhanakan data yang kompleks menjadi format yang mudah diakses dan dimengerti.</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary btn-calc-trigger">Mulai Hitung Pajak <i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="checklist">
+                <span><i class="fas fa-check-circle"></i> Kalkulator Pajak Otomatis</span>
+                <span><i class="fas fa-check-circle"></i> Panduan Lengkap PPh Final</span>
+                <span><i class="fas fa-check-circle"></i> Konsultasi Gratis</span>
+            </div>
+        </div>
+        <div class="dashboard-preview center-element">
+            <div class="card card-dashboard">
+                <i class="fas fa-chart-line"></i>
+                <div class="card-title">Dashboard Pajak</div>
+                <p>Kelola pajak dengan mudah</p>
+                <p>Omzet Bulanan</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+                <div class="amount">Rp 50.000.000</div>
+                <div class="dashboard-footer">
+                    <span>PPh Final</span>
+                    <span>Pajak Terutang</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-section">
+        <span class="tag-info tag-service">Layanan Kami</span>
+        <h2>Fitur <span class="highlight">Unggulan</span> untuk UMKM</h2>
+        <p>Tiga fitur esensial yang dirancang khusus untuk membantu pelaku UMKM mengelola kewajiban perpajakan dengan efisien</p>
+        <div class="services-grid services-grid-3">
+            
+            <a href="#kalkulator" class="service-card service-link">
+                <i class="fas fa-calculator"></i>
+                <div class="service-title">Kalkulator Pajak</div>
+                <p>Hitung PPh Final 0.5% Anda secara otomatis berdasarkan omzet bruto.</p>
+            </a>
+
+            <a href="#keamanan" class="service-card service-link">
+                <i class="fas fa-shield-alt"></i>
+                <div class="service-title">Keamanan Data</div>
+                <p>Data Anda aman dengan enkripsi tingkat tinggi dan privasi pengguna terjaga.</p>
+            </a>
+            
+            <a href="#laporan" class="service-card service-link">
+                <i class="fas fa-clock"></i>
+                <div class="service-title">Laporan Berkala</div>
+                <p>Pantau kewajiban pajak bulanan dan tahunan dengan fitur *reminder* otomatis.</p>
+            </a>
+            
+        </div>
+    </section>
+
+    <section class="calculator-section" id="kalkulator">
+        <div class="calculator-container center-content">
+            <div class="calculator-info">
+                <span class="tag-info">Kalkulator Pajak</span>
+                <h2>Hitung Pajak UMKM Anda</h2>
+                <p>Gunakan kalkulator PPh Final UMKM untuk menghitung pajak terutang Anda berdasarkan omzet bruto. Tarif yang berlaku adalah 0.5% dari omzet untuk UMKM dengan peredaran bruto tidak melebihi Rp 4.8 miliar per tahun.</p>
+                <div class="tax-info-box">
+                    <div class="info-title"><i class="fas fa-info-circle"></i> Ketentuan PPh Final UMKM</div>
+                    <ul>
+                        <li>Tarif 0.5% dari omzet bruto</li>
+                        <li>Berlaku untuk omzet s.d Rp 4.8 miliar/tahun</li>
+                        <li>Batas waktu penggunaan: 7 tahun (PT) atau 4 tahun (CV/Perorangan)</li>
+                        <li>Omzet s.d Rp 500 jutaan tidak dikenakan pajak</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="calculator-card">
+                <div class="card-header">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    Kalkulator PPh Final
+                </div>
+                <label for="omzet">Omzet Bruto (Rp)</label>
+                <div class="input-field">
+                    <span class="rp-prefix">Rp</span>
+                    <input type="number" id="omzet" value="0" placeholder="0">
+                </div>
+                <p class="input-hint">Masukkan total omzet bruto bulanan/tahunan Anda</p>
+                <div class="calculator-actions">
+                    <button class="btn btn-primary btn-calc">Hitung Pajak <i class="fas fa-arrow-right"></i></button>
+                    <button class="btn btn-reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo-section">
+                <div class="logo">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    PajakUMKM
+                </div>
+                <p>Sistem informasi perpajakan terpadu untuk pelaku UMKM Indonesia. Menyederhanakan pengelolaan pajak menjadi lebih mudah dan efisien.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/wildanfl" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:Wildanfaiz05@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://wa.me/6288227020976" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Menu Cepat</h3>
+                <ul>
+                    <li><a href="#">Beranda</a></li>
+                    <li><a href="#">Layanan</a></li>
+                    <li><a href="#kalkulator">Kalkulator</a></li>
+                    <li><a href="#">Informasi</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Hubungi Wildan Faiz Lahmadi</h3>
+                <p><i class="fas fa-envelope"></i> Wildanfaiz05@gmail.com</p>
+                <p><i class="fas fa-phone-alt"></i> 088227020976</p>
+            </div>
+        </div>
+
+        <div class="footer-newsletter">
+            <div class="newsletter-content">
+                <p>Dapatkan Update Terbaru</p>
+                <p class="hint">Berlangganan newsletter untuk informasi perpajakan terkini</p>
+            </div>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Masukkan email Anda">
+                <button class="btn btn-primary">Berlangganan</button>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Wildan Faiz Lahmadi. Hak Cipta Dilindungi.</p>
+            <div class="footer-policy">
+                <a href="#">Kebijakan Privasi</a>
+                <a href="#">Syarat & Ketentuan</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>

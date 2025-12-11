@@ -1,0 +1,654 @@
+/* --- style.css (Kode CSS Final) --- */
+
+/* RESET dan VARIABEL GLOBAL */
+:root {
+    --primary-color: #3b82f6; /* Warna Biru Utama */
+    --secondary-color: #1e40af; /* Biru Tua */
+    --text-color: #4b5563; /* Abu-abu Gelap untuk teks */
+    --text-dark: #1f2937; /* Judul yang sangat gelap */
+    --bg-light: #f3f4f6; /* Latar belakang bagian terang */
+    --border-color: #d1d5db;
+    --highlight-color: #2563eb; /* Warna Biru yang lebih kuat untuk highlight */
+    --font-family: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body {
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    padding: 80px 5%;
+}
+
+/* KELAS UNTUK RATA TENGAH */
+.text-center {
+    text-align: center !important;
+}
+
+.center-element {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--highlight-color);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    border-bottom: 1px solid #e5e7eb;
+    background-color: white;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.logo i {
+    margin-right: 8px;
+}
+
+.nav-links a {
+    margin-left: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* HERO SECTION - HOME (Rata Tengah) */
+.hero-section {
+    display: block; 
+    padding: 100px 5%;
+    background-color: white;
+}
+
+.hero-content {
+    max-width: 750px; 
+    margin: 0 auto; 
+}
+
+.tag-info {
+    background-color: var(--bg-light);
+    color: var(--primary-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.highlight {
+    color: var(--highlight-color);
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-buttons .btn {
+    margin-right: 15px;
+}
+
+.checklist {
+    margin-top: 30px;
+    font-size: 0.95rem;
+    color: var(--text-color);
+    display: inline-block;
+    text-align: left;
+}
+
+.checklist span {
+    margin-right: 20px;
+}
+
+.checklist i {
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+/* DASHBOARD PREVIEW */
+.dashboard-preview {
+    display: flex;
+    justify-content: center; 
+    margin-top: 50px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    width: 350px;
+    border: 1px solid #e5e7eb;
+}
+
+.card-dashboard i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.card-dashboard .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.progress-bar-container {
+    background-color: var(--bg-light);
+    border-radius: 5px;
+    height: 8px;
+    margin: 5px 0 10px;
+}
+
+.progress-bar {
+    background-color: var(--primary-color);
+    height: 100%;
+    border-radius: 5px;
+}
+
+.amount {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+}
+
+.dashboard-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+/* SERVICES SECTION */
+.services-section {
+    background-color: var(--bg-light);
+    text-align: center;
+}
+
+.tag-service {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.services-section h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.services-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+/* Grid 3 Kolom untuk Fitur Unggulan */
+.services-grid, .services-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+/* Styling Card Link (Bisa Diklik) */
+.service-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.service-link {
+    display: block; 
+    color: var(--text-dark); 
+    text-decoration: none;
+}
+
+.service-link:hover {
+    text-decoration: none;
+}
+
+.service-link:hover .service-title {
+    color: var(--primary-color);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.service-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+/* CALCULATOR SECTION */
+.calculator-section {
+    background-color: white;
+    text-align: center;
+}
+
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.calculator-info {
+    flex: 1;
+    max-width: 50%;
+    text-align: left; 
+}
+
+.calculator-info h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+}
+
+.calculator-info p {
+    margin-bottom: 30px;
+}
+
+.tax-info-box {
+    background-color: var(--bg-light);
+    border-left: 5px solid var(--primary-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.info-title {
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+.tax-info-box ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tax-info-box ul li {
+    margin-bottom: 5px;
+    font-size: 0.95rem;
+}
+
+.tax-info-box i {
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+
+.calculator-card {
+    flex: 1;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border: 1px solid var(--border-color);
+    text-align: left; 
+}
+
+.calculator-card .card-header {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 25px;
+}
+
+.calculator-card .card-header i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+.calculator-card label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-light);
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border: 1px solid transparent;
+}
+
+.rp-prefix {
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-right: 10px;
+}
+
+.input-field input {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    width: 100%;
+    outline: none;
+}
+
+.input-hint {
+    font-size: 0.85rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.calculator-actions {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.btn-calc {
+    flex: 1;
+}
+
+.btn-reset {
+    background-color: white;
+    color: var(--text-dark);
+    border: 1px solid var(--border-color);
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--text-dark);
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 5%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-logo-section {
+    max-width: 300px;
+}
+
+.footer-logo-section .logo {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.footer-logo-section p {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    font-size: 1.2rem;
+    color: white;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+    opacity: 1;
+    color: var(--primary-color);
+}
+
+.footer-links h3, .footer-contact h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li a {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+    display: block;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: var(--primary-color);
+}
+
+.footer-contact p {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+    margin-bottom: 8px;
+}
+
+.footer-contact i {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.footer-newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.newsletter-content p {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.newsletter-content .hint {
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    width: 300px;
+    font-size: 1rem;
+}
+
+.footer-bottom {
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #cbd5e1;
+}
+
+.footer-policy a {
+    margin-left: 20px;
+    color: #cbd5e1;
+    transition: color 0.3s;
+}
+
+.footer-policy a:hover {
+    color: var(--primary-color);
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 1024px) {
+    .hero-section {
+        padding-top: 50px;
+    }
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    .calculator-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .calculator-info {
+        max-width: 80%;
+        text-align: center;
+    }
+    .tax-info-box {
+        text-align: left;
+    }
+    .services-grid, .services-grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer-container {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+    }
+    .footer-links, .footer-contact, .footer-logo-section {
+        margin-bottom: 30px;
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .nav-links {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links a {
+        margin: 5px 0;
+    }
+    .hero-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-buttons .btn {
+        margin-right: 0;
+    }
+    /* Mengubah grid layanan menjadi 1 kolom di mobile */
+    .services-grid, .services-grid-3 {
+        grid-template-columns: 1fr;
+    }
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-links, .footer-contact, .footer-logo-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-newsletter {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .newsletter-form {
+        flex-direction: column;
+    }
+    .newsletter-form input {
+        width: 100%;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    .footer-policy a {
+        margin: 0 10px;
+    }
+}
